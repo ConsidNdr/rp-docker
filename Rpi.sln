@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FEA0C318-FFED-4D39-8781-265718CA43DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{00A13DF8-1018-4363-892B-89B491DE09F6}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.env = .env
+		.gitignore = .gitignore
+		README.md = README.md
+		RemoveUnusedImages.ps1 = RemoveUnusedImages.ps1
+		RemoveUnusedImages.sh = RemoveUnusedImages.sh
+		run-docker-compose-build.ps1 = run-docker-compose-build.ps1
+		StopAndRemoveAllContainers.ps1 = StopAndRemoveAllContainers.ps1
+		StopAndRemoveAllContainers.sh = StopAndRemoveAllContainers.sh
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{258EFA4E-E6EA-47EC-863F-289BA0973086}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8C77562C-20C2-40F0-B9AA-78E05CB7093B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B941568C-FEEB-43F6-832A-A29B11781981}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{C82770CA-7624-4F9D-B965-99EE0FB07721}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SPA", "SPA", "{61747512-0278-4B41-8735-062F30BF5114}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{06ACC795-FBFF-4443-A66D-641AA5329EE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{09EF9C0A-7E89-45C5-97A5-FA1F0EB5377A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{D0F7F94C-1463-4CA4-A38F-6940BEDCF75C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BBC8453A-53BE-4B1B-9B9E-B382AFF485C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rpi.SPA.Web", "Src\Web\SPA\Rpi.SPA.Web\Rpi.SPA.Web.csproj", "{87279175-6E96-4744-9FDC-2A621DEB2F2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEA0C318-FFED-4D39-8781-265718CA43DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA0C318-FFED-4D39-8781-265718CA43DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA0C318-FFED-4D39-8781-265718CA43DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA0C318-FFED-4D39-8781-265718CA43DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87279175-6E96-4744-9FDC-2A621DEB2F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87279175-6E96-4744-9FDC-2A621DEB2F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87279175-6E96-4744-9FDC-2A621DEB2F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87279175-6E96-4744-9FDC-2A621DEB2F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B941568C-FEEB-43F6-832A-A29B11781981} = {258EFA4E-E6EA-47EC-863F-289BA0973086}
+		{C82770CA-7624-4F9D-B965-99EE0FB07721} = {258EFA4E-E6EA-47EC-863F-289BA0973086}
+		{61747512-0278-4B41-8735-062F30BF5114} = {C82770CA-7624-4F9D-B965-99EE0FB07721}
+		{06ACC795-FBFF-4443-A66D-641AA5329EE8} = {61747512-0278-4B41-8735-062F30BF5114}
+		{09EF9C0A-7E89-45C5-97A5-FA1F0EB5377A} = {61747512-0278-4B41-8735-062F30BF5114}
+		{D0F7F94C-1463-4CA4-A38F-6940BEDCF75C} = {61747512-0278-4B41-8735-062F30BF5114}
+		{BBC8453A-53BE-4B1B-9B9E-B382AFF485C4} = {61747512-0278-4B41-8735-062F30BF5114}
+		{87279175-6E96-4744-9FDC-2A621DEB2F2D} = {06ACC795-FBFF-4443-A66D-641AA5329EE8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {568B0D0D-EB47-4C41-AE73-C39B73AAB923}
+	EndGlobalSection
+EndGlobal

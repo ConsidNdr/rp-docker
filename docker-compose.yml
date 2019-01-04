@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  spa.web:
+    image: rpi/spa.web:${TAG:-latest}
+    build:
+      context: .
+      dockerfile: src/Web/SPA/Rpi.SPA.Web/Dockerfile
